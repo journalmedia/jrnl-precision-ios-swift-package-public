@@ -1,0 +1,21 @@
+Copyright (c) 2025 Journal Media Ltd. All rights reserved.
+
+This repository is provided solely to facilitate integration of the Journal Precision iOS SDK through Swift Package Manager.
+
+The source files in this repository, including the package manifest, README, and related distribution metadata, may be viewed and used only for the purpose of evaluating or integrating the Journal Precision iOS SDK into applications authorized by Journal Media Ltd.
+
+The binary artifacts referenced by this repository, including all xcframeworks and related compiled components, are proprietary software of Journal Media Ltd. and its licensors.
+
+Except as expressly authorized in a separate written agreement with Journal Media Ltd., you may not:
+
+1. copy, modify, adapt, translate, or create derivative works of the binary artifacts;
+2. redistribute, sublicense, lease, rent, sell, assign, transfer, disclose, or otherwise make the binary artifacts available to any third party;
+3. reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code, trade secrets, or underlying structure of the binary artifacts, except to the limited extent such restriction is prohibited by applicable law;
+4. remove, alter, or obscure any proprietary notices or labels; or
+5. use the software in any manner not expressly permitted by Journal Media Ltd.
+
+Access to or use of this repository or the referenced binary artifacts does not grant any license or rights by implication, estoppel, or otherwise under any intellectual property rights of Journal Media Ltd. or its licensors, except for the limited right to integrate the unmodified binary artifacts as provided by Journal Media Ltd.
+
+THE SOFTWARE AND BINARY ARTIFACTS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN NO EVENT SHALL JOURNAL MEDIA LTD. BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF DATA, REVENUE, PROFITS, OR BUSINESS INTERRUPTION, ARISING OUT OF OR RELATED TO THE USE OF THIS REPOSITORY OR THE BINARY ARTIFACTS.
+
+For licensing, commercial use, or redistribution inquiries, contact Journal Media Ltd.
