@@ -20,13 +20,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "JournalPrecisionDMP",
-            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-dmp/0.0.8/JournalPrecisionDMP.xcframework.zip",
-            checksum: "1ae7c096947e99360f961bc042fa2a8ddf3f6adc2b9033bcc7f34802ddd420d8"
+            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-dmp/0.0.9/JournalPrecisionDMP.xcframework.zip",
+            checksum: "821d1dedf8c50b9f9b60e06d04436058c7975cdf9d5b2747d9370c7c57792504"
         ),
         .binaryTarget(
             name: "JournalPrecisionNativeNetwork",
-            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-native-network/0.0.8/JournalPrecisionNativeNetwork.xcframework.zip",
-            checksum: "44b45a9ac604431c78f3160ad7aa4bf1c7fb0e6818eb5bd7d366e8aacf9938bd"
+            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-native-network/0.0.9/JournalPrecisionNativeNetwork.xcframework.zip",
+            checksum: "bacfded620e106ff44e31b45637d65b9fd7a466f7ece2096b03b78843d5567bc"
         )
     ]
 )
