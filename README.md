@@ -86,7 +86,7 @@ Consuming apps are responsible for obtaining the required user consent, presenti
 
 ## Version
 
-The current package manifest in this repo references the live `0.1.1` S3-hosted binary artifacts.
+The current package manifest in this repo references the live `0.2.0` S3-hosted binary artifacts.
 
 ## License
 
