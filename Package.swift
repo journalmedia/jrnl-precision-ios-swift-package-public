@@ -24,18 +24,18 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "JournalPrecisionDMP",
-            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-dmp/0.2.9/JournalPrecisionDMP.xcframework.zip",
-            checksum: "ce79d61ad17b01f71038f220c50ea383a35006ebb2581025213749e8545ed6eb"
+            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-dmp/0.2.10/JournalPrecisionDMP.xcframework.zip",
+            checksum: "844e407ff51d2afe61c5509dfb9ce093ee94be0d0d83bbd7dfbcefdb2ab1de6c"
         ),
         .binaryTarget(
             name: "JournalPrecisionNativeNetwork",
-            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-native-network/0.2.9/JournalPrecisionNativeNetwork.xcframework.zip",
-            checksum: "0c51aedfdc11869a223962a690ea9de4a4d255c590b76ee71e4b323e12dc5295"
+            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-native-network/0.2.10/JournalPrecisionNativeNetwork.xcframework.zip",
+            checksum: "31b9a7e4c8b9f9b6fb3d632fc340393b0479cea43ff47fd71e4cad46751e48dd"
         ),
         .binaryTarget(
             name: "JournalPrecisionNativeNetworkObjCBridge",
-            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-native-network-objc-bridge/0.2.9/JournalPrecisionNativeNetworkObjCBridge.xcframework.zip",
-            checksum: "051fc3b28f8951f442173d7eaf4eea1c8cc9d35f254e8709551e14b4ea8e2bc3"
+            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-native-network-objc-bridge/0.2.10/JournalPrecisionNativeNetworkObjCBridge.xcframework.zip",
+            checksum: "ef827fa177ae4020ab2d7a14c338d944037e89e11e463fc572822743064dbc43"
         )
     ]
 )
