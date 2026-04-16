@@ -24,7 +24,7 @@ If you prefer to declare the dependency in `Package.swift`:
 dependencies: [
     .package(
         url: "https://github.com/journalmedia/jrnl-precision-ios-swift-package-public.git",
-        from: "0.2.22"
+        from: "0.2.23"
     )
 ]
 ```
@@ -86,7 +86,7 @@ Consuming apps are responsible for obtaining the required user consent, presenti
 
 ## Version
 
-The current package manifest in this repo references the live `0.2.22` S3-hosted binary artifacts.
+The current package manifest in this repo references the live `0.2.23` S3-hosted binary artifacts.
 
 ## License
 
