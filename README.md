@@ -1,13 +1,16 @@
 # jrnl-precision-ios-swift-package-public
 
-Binary Swift Package for the Journal Precision iOS SDK.
+Binary Swift Package distribution for the Journal Precision iOS SDK.
 
-This package exposes two libraries:
+This repository contains the public Swift Package wrapper for prebuilt `.xcframework` binaries. The source code and full integration documentation live in the private source repository and are shared with approved integration partners as needed.
 
-- `JournalPrecisionDMP`
-- `JournalPrecisionNativeNetwork`
+## Product
 
-These products are distributed as prebuilt xcframework binaries and are intended to be added to consumer iOS apps through Swift Package Manager.
+This package exposes one library product:
+
+- `PrecisionNativeSDK`
+
+Add this product to the iOS app targets that integrate Journal Precision.
 
 ## Requirements
 
@@ -16,9 +19,9 @@ These products are distributed as prebuilt xcframework binaries and are intended
 
 ## Installation
 
-Add the package in Xcode using the repository URL for this distribution repo, then select the version you want to use.
+Add this package in Xcode using the repository URL for this distribution repo, then select the version you want to use.
 
-If you prefer to declare the dependency in `Package.swift`:
+For apps that declare dependencies in `Package.swift`:
 
 ```swift
 dependencies: [
@@ -29,64 +32,86 @@ dependencies: [
 ]
 ```
 
-Then add whichever product your app needs:
+Then add the product to the target that needs the SDK:
 
 ```swift
 .target(
     name: "YourAppTarget",
     dependencies: [
-        .product(name: "JournalPrecisionDMP", package: "jrnl-precision-ios-swift-package-public"),
-        .product(name: "JournalPrecisionNativeNetwork", package: "jrnl-precision-ios-swift-package-public")
+        .product(
+            name: "PrecisionNativeSDK",
+            package: "jrnl-precision-ios-swift-package-public"
+        )
     ]
 )
 ```
 
-## Products
+Import the SDK from app code with:
 
-### `JournalPrecisionDMP`
+```swift
+import PrecisionNativeSDK
+```
 
-Shared DMP functionality for:
+## What The SDK Provides
 
-- request building
+`PrecisionNativeSDK` contains shared Journal Precision functionality for iOS apps.
+
+At a high level, it includes:
+
+- DMP request orchestration
 - consent-aware request enrichment
 - DMP response parsing
-- snapshot caching
-- targeting updates
-- analytics event dispatch
+- DMP snapshot caching
+- targeting updates for ad integrations
+- analytics event dispatch hooks
+- native ad placement configuration
+- native ad lookup, cache, and prefetch support
+- UIKit helpers for table, collection, slideshow, and video placement integrations
+- native video presentation support, including inline and interstitial placements
 
-Your app is still responsible for providing app-local adapters such as:
+## App Responsibilities
 
-- consent / CMP integration
-- identity and profile lookup
-- location updates
-- analytics bridge
-- ad targeting bridge
+This package intentionally does not include app-specific wiring.
 
-### `JournalPrecisionNativeNetwork`
+Consuming apps remain responsible for:
 
-Shared native-network helper code for Journal native ad placements, including the carousel/table-cell helper classes used by consuming apps.
+- consent management through Didomi or another CMP
+- identity, profile, and login/logout integration
+- location permission handling and location updates
+- analytics SDK bridging
+- ad-server targeting integration
+- app-specific screen placement policy
+- app-specific feature flags or rollout logic
+- any required privacy disclosures and consent flows
 
-## Integration Notes
+The SDK provides shared infrastructure and integration points; the host app owns the app-local adapters and third-party SDK setup.
 
-This package intentionally does not include app-specific wiring. Consuming apps must integrate their own local services and third-party SDKs around these binaries.
+## Documentation
 
-Typical app responsibilities include:
+This public repository is intentionally a lightweight binary distribution wrapper.
 
-- configuring any DMP endpoint or app identifier values required by the host app
-- providing consent state from Didomi or another CMP
-- wiring location permission and location updates
-- routing DMP targeting into the app's ad request builder
-- initializing and bridging the app's analytics SDK
+Full implementation guides, API references, and sample adapter code are maintained in the private source repository. Integration partners who need detailed setup documentation should request access to that repository.
+
+The private documentation covers:
+
+- DMP integration
+- Didomi consent integration
+- native placement integration
+- native lookup, cache, and prefetch behavior
+- public API reference
+- sample app-local adapter implementations
 
 ## Privacy
 
-Depending on how your app integrates these products, the DMP flow may handle consent state, coarse or precise location inputs, vendor identifiers, and advertising identifiers.
+Depending on the host app integration, Journal Precision flows may handle consent state, coarse or precise location inputs, vendor identifiers, advertising identifiers, profile-derived identifiers, and ad targeting data.
 
-Consuming apps are responsible for obtaining the required user consent, presenting any required privacy disclosures, and ensuring platform and legal compliance before sending this data to any configured endpoint.
+Consuming apps are responsible for obtaining the required user consent, presenting any required privacy disclosures, and ensuring platform and legal compliance before sending data to configured endpoints.
 
-## Version
+## Versioning
 
-The current package manifest in this repo references the live `0.0.1` S3-hosted binary artifacts.
+Use tagged releases from this repository when adding the package through Swift Package Manager.
+
+Each release references S3-hosted binary artifacts generated from the corresponding private source release.
 
 ## License
 
