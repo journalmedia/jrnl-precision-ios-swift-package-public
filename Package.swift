@@ -9,24 +9,15 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "JournalPrecisionDMP",
-            targets: ["JournalPrecisionDMP"]
-        ),
-        .library(
-            name: "JournalPrecisionNativeNetwork",
-            targets: ["JournalPrecisionNativeNetwork"]
+            name: "PrecisionNativeSDK",
+            targets: ["PrecisionNativeSDK"]
         )
     ],
     targets: [
         .binaryTarget(
-            name: "JournalPrecisionDMP",
-            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-dmp/0.1.0/JournalPrecisionDMP.xcframework.zip",
-            checksum: "5c221c9ca51d4a12ee55f077338db0b27c9cfbd0e4cef0091adef81c91889403"
-        ),
-        .binaryTarget(
-            name: "JournalPrecisionNativeNetwork",
-            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-native-network/0.1.0/JournalPrecisionNativeNetwork.xcframework.zip",
-            checksum: "ce222e9a7a8c743a4cb275847735f9581e89e6bad7dbfa5a5ba1378c26054a49"
+            name: "PrecisionNativeSDK",
+            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-native/0.3.0/PrecisionNativeSDK.xcframework.zip",
+            checksum: "47ea4b6f8157e0fea56d9c30a8609209350a11a9ec5f7170db72d93aba9450e5"
         )
     ]
 )
