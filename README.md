@@ -27,7 +27,7 @@ For apps that declare dependencies in `Package.swift`:
 dependencies: [
     .package(
         url: "https://github.com/journalmedia/jrnl-precision-ios-swift-package-public.git",
-        from: "0.3.4"
+        from: "0.3.5"
     )
 ]
 ```
