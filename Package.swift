@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "jrnl-precision-ios",
+    name: "precision-sdk-ios",
     platforms: [
         .iOS(.v15)
     ],

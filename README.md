@@ -1,20 +1,20 @@
-# jrnl-precision-ios-swift-package-public
+# precision-sdk-ios-spm
 
-Binary Swift Package distribution for the Journal Precision iOS SDK.
+Binary Swift Package distribution for the Precision iOS SDK.
 
-This repository contains the public Swift Package wrapper for prebuilt `.xcframework` binaries. The source code and full integration documentation live in the private source repository and are shared with approved integration partners as needed.
+This repository contains the public Swift Package wrapper for prebuilt `.xcframework` binaries. The source code and full integration documentation live in the private source repository (`precision-sdk-ios`) and are shared with approved integration partners as needed.
 
 ## Product
 
 This package exposes one library product:
 
-- `PrecisionNativeSDK`
+- `PrecisionSDK`
 
-Add this product to the iOS app targets that integrate Journal Precision.
+Add this product to the iOS app targets that integrate Precision.
 
 ## Requirements
 
-- iOS 14.0+
+- iOS 15.0+
 - Xcode with Swift Package Manager support
 
 ## Installation
@@ -26,7 +26,7 @@ For apps that declare dependencies in `Package.swift`:
 ```swift
 dependencies: [
     .package(
-        url: "https://github.com/journalmedia/jrnl-precision-ios-swift-package-public.git",
+        url: "https://github.com/journalmedia/precision-sdk-ios-spm.git",
         from: "0.6.0"
     )
 ]
@@ -39,8 +39,8 @@ Then add the product to the target that needs the SDK:
     name: "YourAppTarget",
     dependencies: [
         .product(
-            name: "PrecisionNativeSDK",
-            package: "jrnl-precision-ios-swift-package-public"
+            name: "PrecisionSDK",
+            package: "precision-sdk-ios-spm"
         )
     ]
 )
@@ -49,12 +49,12 @@ Then add the product to the target that needs the SDK:
 Import the SDK from app code with:
 
 ```swift
-import PrecisionNativeSDK
+import PrecisionSDK
 ```
 
 ## What The SDK Provides
 
-`PrecisionNativeSDK` contains shared Journal Precision functionality for iOS apps.
+`PrecisionSDK` contains shared Precision functionality for iOS apps.
 
 At a high level, it includes:
 
