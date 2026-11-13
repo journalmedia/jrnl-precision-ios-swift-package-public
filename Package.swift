@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "precision-sdk-ios",
+    name: "PrecisionSDK",
     platforms: [
         .iOS(.v15)
     ],
@@ -16,8 +16,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "PrecisionSDK",
-            url: "https://jrnl-precision.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/journal-precision-native/0.6.0/PrecisionSDK.xcframework.zip",
-            checksum: "4af50a44cccb0e7a1bf266d59344ef229dce545de293bf049db5d36ab75ecfc4"
+            url: "https://precision-cdn.s3.eu-west-1.amazonaws.com/mobile-sdks/ios/binaries/precision-sdk-ios/0.7.0/PrecisionSDK.xcframework.zip",
+            checksum: "e1e5495bc34bd039e1e3f4e30c2963eb468ff6e256834bb06d723b02180a2330"
         )
     ]
 )
